@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Parcours — Thibault Mesmin</title>
+        <link rel="icon" type="image/png" href="assets/portrait.png" />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="navbar" id="top">
+            <div class="container navbar__content">
+                <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+                    <span class="brand__dot" aria-hidden="true"></span>
+                    <span class="brand__text">M.<span class="brand__accent">Thibault</span></span>
+                </a>
+
+                <nav class="navbar__links" aria-label="Navigation principale">
+                    <a class="nav-link" href="index.html#home">Accueil</a>
+                    <a class="nav-link" href="index.html#skills">Compétences</a>
+                    <a class="nav-link" href="index.html#projects">Projets</a>
+                    <a class="nav-link" href="parcours.html">Parcours</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </nav>
+
+                <div class="navbar__actions">
+                    <button class="button button--ghost" id="themeToggleBtn" type="button">Thème</button>
+                    <a class="button button--primary" href="contact.html">Me contacter</a>
+                </div>
+
+                <button class="burger" id="burgerBtn" type="button" aria-label="Ouvrir le menu">☰</button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+                <a class="mobile-menu__link" href="index.html#home">Accueil</a>
+                <a class="mobile-menu__link" href="index.html#skills">Compétences</a>
+                <a class="mobile-menu__link" href="index.html#projects">Projets</a>
+                <a class="mobile-menu__link" href="parcours.html">Parcours</a>
+                <a class="mobile-menu__link" href="contact.html">Contact</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section parcours-hero">
+                <div class="container">
+                    <div class="card parcours-hero__card reveal">
+                        <p class="parcours-hero__label">Mon histoire</p>
+                        <h1 class="hero__title">De Pompier de Paris à Développeur en alternance</h1>
+                        <p class="hero__subtitle">
+                            Ce parcours m’a appris à gérer la pression, à décider vite, et à rester rigoureux.
+                            Aujourd’hui, j’applique ces réflexes dans le développement logiciel pour construire des applications fiables et utiles.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="timeline">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-header__title">Timeline</h2>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="card timeline__item reveal">
+                            <span class="timeline__year">2022</span>
+                            <h3 class="card__title">Intégration Brigade sapeur-pompier de paris</h3>
+                            <img class="timeline__img" src="./assets/d57a6394-485c-4db3-86d0-ee2513b24673.jpeg" alt="photo intégration BSPP" loading="lazy">
+                            <p class="card__text">Formation intense, discipline et esprit d’équipe au quotidien.</p>
+                        </article>
+
+                        <article class="card timeline__item reveal">
+                            <span class="timeline__year">2022</span>
+                            <h3 class="card__title">Blessure & reconversion</h3>
+                            <p class="card__text">Réorientation vers l’informatique, avec la même exigence que sur le terrain.</p>
+                        </article>
+
+                        <article class="card timeline__item reveal">
+                            <span class="timeline__year">2024</span>
+                            <h3 class="card__title">Diplôme CDA</h3>
+                            <p class="card__text">Concepteur Développeur d’Applications en alternance à la MAIF.</p>
+                        </article>
+
+                        <article class="card timeline__item reveal">
+                            <span class="timeline__year">Aujourd’hui</span>
+                            <h3 class="card__title">EADL en alternance</h3>
+                            <p class="card__text">Expert en Architecture et Développement Logiciel, toujours en alternance.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="transfert">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-header__title">Compétences transférables</h2>
+                    </div>
+
+                    <div class="grid grid--2">
+                        <article class="card reveal">
+                            <h3 class="card__title">Terrain</h3>
+                            <ul class="hero-card__list">
+                                <li>Calme sous pression</li>
+                                <li>Gestion des priorités</li>
+                                <li>Communication claire</li>
+                                <li>Rigueur opérationnelle</li>
+                            </ul>
+                        </article>
+
+                        <article class="card reveal">
+                            <h3 class="card__title">Application en développement</h3>
+                            <ul class="hero-card__list">
+                                <li>Debug efficace en incident</li>
+                                <li>Livraison fiable en équipe</li>
+                                <li>Code lisible et maintenable</li>
+                                <li>Focus qualité et sécurité</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer footer--social">
+            <div class="container footer__content">
+                <div class="footer__socials" aria-label="Réseaux sociaux">
+                    <a class="social-link" href="https://www.linkedin.com/in/thibault-m-952951241" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.34 10.17H5.05V20h3.29v-9.83Zm.22-3.05a1.9 1.9 0 1 0-3.8 0 1.9 1.9 0 0 0 3.8 0ZM20 14.35V20h-3.28v-5.26c0-1.32-.47-2.22-1.66-2.22-.9 0-1.43.6-1.67 1.19-.09.21-.11.5-.11.78V20h-3.3s.05-8.95 0-9.83h3.3v1.39c.44-.68 1.22-1.64 2.97-1.64 2.16 0 3.75 1.41 3.75 4.43Z" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://github.com/Faizthi317" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.66-.22.66-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05.8-.23 1.66-.35 2.52-.36.85 0 1.72.12 2.52.36 1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.07.36.31.68.93.68 1.87 0 1.35-.01 2.44-.01 2.77 0 .27.17.59.67.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+                <span>© <span id="year"></span> Thibault Mesmin — Tous droits réservés</span>
+                <p class="footer__ai"><span aria-hidden="true">🤖</span> J'ai réalisé ce site avec l’aide de l’IA.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

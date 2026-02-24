@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact — Thibault Mesmin</title>
+        <link rel="icon" type="image/png" href="assets/portrait.png" />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="navbar" id="top">
+            <div class="container navbar__content">
+                <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="Retour à l'accueil"
+                >
+                    <span class="brand__dot" aria-hidden="true"></span>
+                    <span class="brand__text"
+                        >M.<span class="brand__accent">Thibault</span></span
+                    >
+                </a>
+
+                <nav class="navbar__links" aria-label="Navigation principale">
+                    <a class="nav-link" href="index.html#home">Accueil</a>
+                    <a class="nav-link" href="index.html#skills">Compétences</a>
+                    <a class="nav-link" href="index.html#projects">Projets</a>
+                    <a class="nav-link" href="parcours.html">Parcours</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </nav>
+
+                <div class="navbar__actions">
+                    <button
+                        class="button button--ghost"
+                        id="themeToggleBtn"
+                        type="button"
+                    >
+                        Thème
+                    </button>
+                    <a class="button button--primary" href="index.html"
+                        >Retour portfolio</a
+                    >
+                </div>
+
+                <button class="burger" id="burgerBtn" type="button" aria-label="Ouvrir le menu">
+                    ☰
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+                <a class="mobile-menu__link" href="index.html#home">Accueil</a>
+                <a class="mobile-menu__link" href="index.html#skills"
+                    >Compétences</a
+                >
+                <a class="mobile-menu__link" href="index.html#projects"
+                    >Projets</a
+                >
+                <a class="mobile-menu__link" href="parcours.html">Parcours</a>
+                <a class="mobile-menu__link" href="contact.html">Contact</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section contact-page" id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <h1 class="section-header__title">Contact</h1>
+                    </div>
+
+                    <form
+                        class="card contact-form contact-page__form reveal"
+                        id="contactForm"
+                        action="https://formspree.io/f/mbdapark"
+                        method="POST"
+                    >
+                        <input
+                            type="text"
+                            name="_gotcha"
+                            tabindex="-1"
+                            autocomplete="off"
+                            style="display: none"
+                        />
+
+                        <label class="field">
+                            <span class="field__label">Nom</span>
+                            <input
+                                class="field__input"
+                                name="name"
+                                type="text"
+                                placeholder="Ton nom"
+                                required
+                            />
+                        </label>
+
+                        <label class="field">
+                            <span class="field__label">Email</span>
+                            <input
+                                class="field__input"
+                                name="email"
+                                type="email"
+                                placeholder="ton@email.com"
+                                required
+                            />
+                        </label>
+
+                        <label class="field">
+                            <span class="field__label">Sujet</span>
+                            <input
+                                class="field__input"
+                                name="_subject"
+                                type="text"
+                                placeholder="Sujet de la demande"
+                                required
+                            />
+                        </label>
+
+                        <label class="field field--full">
+                            <span class="field__label">Message</span>
+                            <textarea
+                                class="field__input field__textarea"
+                                name="message"
+                                rows="5"
+                                placeholder="Ton message..."
+                                required
+                            ></textarea>
+                        </label>
+
+                        <button class="button button--primary" type="submit">
+                            Envoyer
+                        </button>
+                        <p class="form-hint" id="formHint"></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer footer--social">
+            <div class="container footer__content">
+                <div class="footer__socials" aria-label="Réseaux sociaux">
+                    <a
+                        class="social-link"
+                        href="https://www.linkedin.com/in/thibault-m-952951241"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <svg
+                            class="social-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M8.34 10.17H5.05V20h3.29v-9.83Zm.22-3.05a1.9 1.9 0 1 0-3.8 0 1.9 1.9 0 0 0 3.8 0ZM20 14.35V20h-3.28v-5.26c0-1.32-.47-2.22-1.66-2.22-.9 0-1.43.6-1.67 1.19-.09.21-.11.5-.11.78V20h-3.3s.05-8.95 0-9.83h3.3v1.39c.44-.68 1.22-1.64 2.97-1.64 2.16 0 3.75 1.41 3.75 4.43Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        class="social-link"
+                        href="https://github.com/Faizthi317"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <svg
+                            class="social-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.66-.22.66-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05.8-.23 1.66-.35 2.52-.36.85 0 1.72.12 2.52.36 1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.82-4.57 5.07.36.31.68.93.68 1.87 0 1.35-.01 2.44-.01 2.77 0 .27.17.59.67.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        class="social-link"
+                        href="mailto:contact@exemple.fr"
+                        aria-label="Email"
+                    >
+                        <svg
+                            class="social-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M20 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 2-8 5L4 7h16Zm0 10H4V9l8 5 8-5v8Z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <span
+                    >© <span id="year"></span> Thibault Mesmin — Tous droits
+                    réservés</span
+                >
+                <p class="footer__ai">
+                    <span aria-hidden="true">🤖</span> Site réalisé avec l’aide
+                    de l’IA.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
