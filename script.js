@@ -164,12 +164,29 @@ function setupContactForm() {
     });
 }
 
-// ===== Init =====
-document.addEventListener("DOMContentLoaded", () => {
+function initApp() {
     setCurrentYear();
     setupActiveSectionObserver();
     setupRevealOnScroll();
     setupMobileMenu();
     setupThemeToggle();
     setupContactForm();
-});
+}
+
+if (typeof document !== "undefined") {
+    document.addEventListener("DOMContentLoaded", initApp);
+}
+
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+        selectAll,
+        setActiveNavLink,
+        setupActiveSectionObserver,
+        setupRevealOnScroll,
+        setCurrentYear,
+        setupMobileMenu,
+        setupThemeToggle,
+        setupContactForm,
+        initApp,
+    };
+}

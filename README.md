@@ -35,8 +35,11 @@ Le projet a été construit avec une approche **HTML/CSS/JavaScript vanilla**, a
 ```text
 Portefolio/
 ├── index.html
-├── parcours.html
-├── contact.html
+├── src/
+│   ├── parcours/
+│   │   └── parcours.html
+│   └── contact/
+│       └── contact.html
 ├── styles.css
 ├── script.js
 ├── README.md
@@ -55,7 +58,7 @@ Avec VS Code, utiliser une extension type **Live Server** pour un rechargement a
 
 ## Formulaire de contact
 
-Le formulaire de `contact.html` envoie les données vers l’endpoint Formspree défini dans l’attribut `action` du formulaire.
+Le formulaire de `src/contact/contact.html` envoie les données vers l’endpoint Formspree défini dans l’attribut `action` du formulaire.
 
 Endpoint actuel :
 
@@ -66,11 +69,11 @@ https://formspree.io/f/mbdapark
 Pour utiliser ton propre endpoint :
 
 1. Crée un formulaire sur Formspree.
-2. Remplace l’URL dans `contact.html`.
+2. Remplace l’URL dans `src/contact/contact.html`.
 
 ## Personnalisation
 
-- Modifier les textes et sections dans `index.html`, `parcours.html`, `contact.html`
+- Modifier les textes et sections dans `index.html`, `src/parcours/parcours.html`, `src/contact/contact.html`
 - Adapter le style global dans `styles.css`
 - Ajuster les comportements JS dans `script.js`
 - Remplacer les images/médias dans `assets/`

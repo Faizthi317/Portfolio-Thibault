@@ -1,0 +1,23 @@
+{
+  "name": "portefolio",
+  "version": "1.0.0",
+  "description": "Portfolio personnel présentant mon parcours de reconversion, mes compétences et mes projets en développement web.",
+  "main": "script.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faizthi317/Portfolio-Thibault.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faizthi317/Portfolio-Thibault/issues"
+  },
+  "homepage": "https://github.com/Faizthi317/Portfolio-Thibault#readme",
+  "devDependencies": {
+    "jsdom": "^28.1.0"
+  }
+}
