@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Thibault Mesmin — Portfolio</title>
         <link rel="icon" type="image/png" href="assets/portrait.png" />
+        <link
+            rel="preload"
+            as="image"
+            href="assets/portrait-640.png"
+            imagesrcset="assets/portrait-320.png 320w, assets/portrait-640.png 640w"
+            imagesizes="(max-width: 768px) 320px, 640px"
+        />
 
         <link rel="stylesheet" href="styles.css" />
     </head>
@@ -106,10 +113,21 @@
                     <div class="hero__visual">
                         <div class="avatar" id="avatar">
                             <div class="avatar__overlay">
-                                <img
-                                    src="assets/portrait.png"
-                                    alt="Portrait de Thibault"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="assets/portrait-320.png 320w, assets/portrait-640.png 640w"
+                                        sizes="(max-width: 768px) 320px, 640px"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="assets/portrait-640.png"
+                                        alt="Portrait de Thibault"
+                                        width="640"
+                                        height="640"
+                                        fetchpriority="high"
+                                        decoding="async"
+                                    />
+                                </picture>
                             </div>
                         </div>
 
