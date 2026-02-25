@@ -141,6 +141,21 @@ Pour utiliser ton propre endpoint :
 - Ajuster les comportements JS dans `script.js`
 - Remplacer les images/médias dans `assets/`
 
+## CI/CD
+
+Le workflow GitHub Actions est défini dans `.github/workflows/ci-cd.yml`.
+
+- **CI** : à chaque `push` et `pull_request` sur `main`, le pipeline lance :
+	- `npm ci`
+	- `npm run test`
+- **CD** : sur `push` vers `main` uniquement, le site est déployé automatiquement sur **GitHub Pages**.
+
+### Activation GitHub Pages
+
+1. Ouvrir **Settings > Pages** dans le repository GitHub.
+2. Dans **Build and deployment**, choisir **Source: GitHub Actions**.
+3. Push sur `main` pour déclencher le premier déploiement.
+
 ## Auteur
 
 **Thibault Mesmin**
