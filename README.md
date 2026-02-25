@@ -111,28 +111,17 @@ Rapports JMeter générés dans `tests/perf/results/`.
 
 ## Lancer le projet en local
 
-### Option 1 — Ouverture directe
-
-Ouvrir le fichier `index.html` dans un navigateur.
-
-### Option 2 — Serveur local (recommandé)
+### Option 1 — Serveur local
 
 Avec VS Code, utiliser une extension type **Live Server** pour un rechargement automatique.
 
+### Option 2 — Github Pages
+
+=> voir tout à la fin du readME le lien vers le site deployé
+
 ## Formulaire de contact
 
-Le formulaire de `src/contact/contact.html` envoie les données vers l’endpoint Formspree défini dans l’attribut `action` du formulaire.
-
-Endpoint actuel :
-
-```html
-https://formspree.io/f/mbdapark
-```
-
-Pour utiliser ton propre endpoint :
-
-1. Crée un formulaire sur Formspree.
-2. Remplace l’URL dans `src/contact/contact.html`.
+Envoie réellement un email via Formspree sur mon adresse mail
 
 ## Personnalisation
 
@@ -150,11 +139,9 @@ Le workflow GitHub Actions est défini dans `.github/workflows/ci-cd.yml`.
 	- `npm run test`
 - **CD** : sur `push` vers `main` uniquement, le site est déployé automatiquement sur **GitHub Pages**.
 
-### Activation GitHub Pages
+### GitHub Pages
 
-1. Ouvrir **Settings > Pages** dans le repository GitHub.
-2. Dans **Build and deployment**, choisir **Source: GitHub Actions**.
-3. Push sur `main` pour déclencher le premier déploiement.
+https://faizthi317.github.io/Portfolio-Thibault/
 
 ## Auteur
 
