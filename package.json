@@ -4,7 +4,10 @@
   "description": "Portfolio personnel présentant mon parcours de reconversion, mes compétences et mes projets en développement web.",
   "main": "script.js",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "perf:lighthouse": "bash ./tests/perf/run-lighthouse.sh",
+    "perf:jmeter": "bash ./tests/perf/run-jmeter.sh",
+    "perf:all": "npm run perf:lighthouse && npm run perf:jmeter"
   },
   "repository": {
     "type": "git",

@@ -21,6 +21,12 @@ build/
 coverage/
 .nyc_output/
 
+# Performance test artifacts
+tests/perf/results/
+*.jtl
+*.report.html
+*.report.json
+
 # Editor / OS
 .idea/
 .vscode/

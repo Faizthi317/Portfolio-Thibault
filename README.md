@@ -37,14 +37,77 @@ Portefolio/
 ├── index.html
 ├── src/
 │   ├── parcours/
-│   │   └── parcours.html
+│   │   ├── parcours.html
+│   │   └── parcours.css
 │   └── contact/
-│       └── contact.html
+│       ├── contact.html
+│       └── contact.css
+├── tests/
+│   ├── script.test.js
+│   └── perf/
+│       ├── run-lighthouse.sh
+│       ├── run-jmeter.sh
+│       └── jmeter-static-site.jmx
 ├── styles.css
 ├── script.js
 ├── README.md
 └── assets/
 ```
+
+## Tests
+
+### Tests unitaires
+
+```bash
+npm run test
+```
+
+### Tests de performance (Lighthouse)
+
+```bash
+npm run perf:lighthouse
+```
+
+Le script audite par défaut `http://127.0.0.1:4173/index.html` et démarre un serveur local temporaire si nécessaire.
+
+Pour auditer une URL spécifique (ex: version déployée) :
+
+```bash
+bash ./tests/perf/run-lighthouse.sh "https://ton-site.com"
+```
+
+Les rapports sont générés dans `tests/perf/results/`.
+
+### Tests de charge (JMeter)
+
+Prérequis (macOS) :
+
+```bash
+brew install jmeter
+```
+
+Lancer un test de charge sur le plan fourni :
+
+```bash
+npm run perf:jmeter
+```
+
+Variables disponibles :
+
+- `JMETER_PROTOCOL` (défaut: `http`)
+- `JMETER_HOST` (défaut: `127.0.0.1`)
+- `JMETER_PORT` (défaut: `4173`)
+- `JMETER_USERS` (défaut: `50`)
+- `JMETER_RAMPUP` (défaut: `30`)
+- `JMETER_LOOPS` (défaut: `10`)
+
+Exemple :
+
+```bash
+JMETER_USERS=100 JMETER_RAMPUP=60 JMETER_LOOPS=20 npm run perf:jmeter
+```
+
+Rapports JMeter générés dans `tests/perf/results/`.
 
 ## Lancer le projet en local
 
